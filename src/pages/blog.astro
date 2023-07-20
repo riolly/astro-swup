@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="swup this up">
+  <main class="max-w-screen-md mx-auto pt-20 space-y-4" id="swup">
+    <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum dicta dolorum maxime voluptatibus, ad iste.</h1>
+    <a class="underline text-blue-700" href="/">Home</a>
+    <p class="text-black">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quidem
+      ab, totam provident repudiandae fugit neque facilis cum corrupti
+      perspiciatis cupiditate expedita quaerat eaque accusantium recusandae est
+      ex voluptatem molestiae. Perferendis, quisquam impedit? Provident nostrum
+      adipisci natus laboriosam quisquam error doloremque dignissimos?
+      Accusantium veritatis nobis voluptate minima, dignissimos, delectus
+      incidunt quam necessitatibus facere eum totam! Ex voluptatem quam
+      similique quas asperiores? Tenetur assumenda, doloribus dolores iure
+      provident amet obcaecati dolorem repellat impedit ipsa nam unde laboriosam
+      odio cupiditate tempore praesentium nobis quo nesciunt rem quos sunt
+      facere, voluptates explicabo commodi. Voluptatum quos doloremque, facere
+      accusamus, quas iusto, perspiciatis assumenda quae magnam eos quia quis.
+      Cupiditate, incidunt tempora aliquid velit unde omnis. Omnis id
+      cupiditate, sapiente ipsa corrupti dicta magni nulla eos totam
+      reprehenderit, exercitationem ab a autem vitae. Laudantium ex perferendis
+      voluptates, molestiae sit nesciunt ratione hic quas officia sapiente, eius
+      doloremque voluptatum dolor, labore nisi minus repudiandae beatae natus
+      omnis rerum architecto doloribus laboriosam obcaecati ab? Quidem quaerat
+      consequatur inventore alias ipsam eveniet laboriosam accusantium est culpa
+      veniam provident libero similique consequuntur repellendus, illo, a
+      corporis beatae dicta dolores sapiente assumenda aspernatur id. Delectus
+      suscipit sunt accusamus nulla nam? Totam corrupti perferendis maiores
+      dolores magnam in, accusantium debitis a?
+    </p>
+    <button id="tada" class="border rounded-lg px-3 py-1 hover:bg-gray-200 active:bg-gray-300">Surprise me!</button>
+  </main>
+</Layout>
+
+<script is:inline>
+  const button = document.querySelector('button#tada')
+  button.addEventListener('click', () => alert('Tadaa!!!'))
+</script>
