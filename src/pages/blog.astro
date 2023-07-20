@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="swup this up">
-  <main class="max-w-screen-md mx-auto pt-20 space-y-4" id="swup">
-    <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum dicta dolorum maxime voluptatibus, ad iste.</h1>
+  <div class="max-w-screen-md mx-auto py-16 space-y-4">
+    <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
     <a class="underline text-blue-700" href="/">Home</a>
     <p class="text-black">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quidem
@@ -32,10 +32,16 @@ import Layout from "../layouts/Layout.astro";
       dolores magnam in, accusantium debitis a?
     </p>
     <button id="tada" class="border rounded-lg px-3 py-1 hover:bg-gray-200 active:bg-gray-300">Surprise me!</button>
+    <button id="tada-inline" class="border rounded-lg px-3 py-1 hover:bg-gray-200 active:bg-gray-300">Inline me!</button>
   </main>
 </Layout>
 
-<script is:inline>
+<script>
   const button = document.querySelector('button#tada')
   button.addEventListener('click', () => alert('Tadaa!!!'))
+</script>
+
+<script is:inline>
+  const button = document.querySelector('button#tada-inline')
+  button.addEventListener('click', () => alert('Tadaa (inline)!!!'))
 </script>
